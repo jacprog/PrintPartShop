@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<!--
+	Comments:
+	Exercise 3 Prototype
+	Date 1/30/2018
+	Name: Jacques Favre
+	Class CGS2829.0M1 Advance Web Site
+	Language HTML 5, CSS 3, jquerry
+	Incude:
+	Slicknav responsive menu, courtesy of MIT http://slicknav.io Copyright (c) 2016 Josh Cope
+	Terms and Privacy, non comercial use only, courtesy of http://getterms.io/	
+
+	
+	-->
+	
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Print Part Shop prototype1</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="SlickNav/slicknav.css">
+	
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="SlickNav/jquery.slicknav.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+	$('#menu').slicknav();
+	});
+	</script>
+
+</head>
+
+<body>
+	<header>
+		<h2><a href="index.html" class="current">Print Part Shop</a></h2>
+			<nav id="menu">
+    			<ul>
+        			<li><a href="index.html" class="current">Home</a></li>
+        			<li><a href="pages/contact.html">Contact</a></li>
+        			<li><a>Projects</a>
+        				<ul>
+        					<li><a href="pages/project1.html">Bearing</a></li> 
+        					<li><a href="pages/project2.html">Clock</a></li>        		
+        				</ul>       	
+        			</li>
+          		</ul>
+			</nav>
+	</header>
+
+	<main>
+<!-- 		<section> -->
+	
+			<h1>A Factory on the Desktop!</h1>
+    			
+			<img src="images/printer.jpg" alt="My printer"> 
+		
+					<p>My goal is to inspire you and help you be successful with this new technology.<br>
+					I have two projects to share:</p>
+					<ul>
+					<li>Ball bearings</li>
+					<li>Clock</li></ul>
+					<p>You can buy them or learn how to make them.
+					</p>					
+					
+<!-- 					You can buy my own production, and you can learn from my examples.<br>
+					Today, 3D printing allows everyone to have a fabrication machine at their finger’s tips. They are many ways to use this new tool, but my focus will be on two capabilities that this technology can provide.<br>
+					Build a product that contains multiple moving parts all at once, like ball and roller bearings.<br>
+					And build finished mechanical parts, like gears that make it possible to build a mechanical clock.					
+					</p> -->
+					<h2>Let's go create together!</h2>
+
+
+		
+					<p><a href="mailto:jacqueshfavre@gmail.com?&subject=Jacques%20Favre%20Portfolio"><strong>Email me</strong></a> with questions or comments.</p>
+   
+<!-- 		</section> -->
+
+	</main>
+	<footer>
+		<p><a href="pages/termsAndPrivacy.html">Terms and Privacy</a>&nbsp;&nbsp;&copy; 2018	Jacques Favre ajfavre.com</p>
+	</footer>
+</body>
+</html>
