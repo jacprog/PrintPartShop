@@ -12,11 +12,10 @@
 	Terms and Privacy, courtesy of http://getterms.io/	
 	
 	
-	color: #dce2ea;  light blue text link**** lighter
-	color: #eff2f5;  light blue background****darker
+	color: #dce2ea;  light blue box link menu**** darker
+	color: #eff2f5;  light blue background****lighter
 	color: #282828;  almost black 
-	
-	need to add color to section to tone down white  was fff	 now background-color #fffefd  light blue
+	color: #400000; red almost black for site header
 	
 */
 /* reset selector */
@@ -33,14 +32,15 @@ body {
 /*     width: 99%; */
 	max-width: 960px;
 	margin: 0 auto; 
-	background-color: #eff2f5;  /* to make all light blue #dce2ea = lighter  */
+	background-color: #eff2f5;  /* to make all light blue #dce2ea = darker  */
 		
 	}
 
 html {
 	 /* to make sides light blue, all same color  when done    */	
-/* 	 background-color: #dce2ea;  */
 	 /* to make all light blue to see width at building  */	 
+	/* 	background-color: #dce2ea;  */
+	 /* to make sides light blue, all same color  when done    */		
 	background-color: #eff2f5;  
 	
 	}
@@ -49,15 +49,17 @@ html {
 /*the style for the h2 within the header*/
 	header h2 {
 		font-size: 300%;
-		font-family: Arial Black;
+ 		font-weight: 900;		/*to make bold */
+		font-family: Impact, "Arial Black"; 
+/*Arial Black font not showing on mobile, Added quotes, still not working*/ 
 		color: #400000; /*red almost black*/
-		padding: .2em;
-		margin-left: 1%;
+		padding: .6em 0 0 .4em;
+/* 		margin-left: 1%; */
 		float: left;
 
 	}
 	
-	header h2 a {								/* header link same color, syle*/
+	header h2 a {								/* header link style same color, no line*/
 		text-decoration: none;
 		color: #800000;
 
@@ -155,89 +157,8 @@ main {
 	border: 1px solid #282828;
 	border-radius: 2px;
 	max-width: 100%;
-
-	}	section {
-	width: 96%; /* (525/800)*100 = 65.625% minus 5% for margins*/ 
-	float: right;
-
-
-	padding: 0 2% 20px 2%; /* (20/800)*100 = 2.5%*/
-	background-color: #eff2f5;
-	margin: 1em 0 1em 0;
-	}
-
-	section img {  
-	float: left;
-	margin: 0 1em 2em 0;
-	border: 1px solid #282828;
-	border-radius: 10px;
-	max-width: 60%;
-
 	}	
 	
-
-	section a {
-	text-decoration: none;
-	color: #202020;/* color text link, need a dark blue*/
-	}
-
-	/*the style for the h1 within the main section   */
-	section h1{
-	font-size: 150%;
-	padding:  1em 0;
-	margin: 0;
-	}
-	
-	/*the style for the h2 to make smaller within the main section   */
-	section h2 {
-		font-size: 125%;
-		/*color: #282828;*/
-		padding: .5em 0 1em 0 ;  /*top right bottom left   */
-	}
-	
-	section h3 {
-		font-size: 110%;
-		padding-bottom : 1em;
-	}
-	/*#right { text-align: right;}*/
-	
-	section p {
-		font-size: 110%;
-/*		padding-bottom : 1em;    why did ineed  screw bike page*/
-	}
-	
-		
-
-
-		aside {
-		width: 26.875%;          /* (215/800)*100 = 26.875% - 5%  for margin*/
-		float: right;
-		padding-left: 2.5%; /* (20/800)*100 = 2.5%* only left*/
-	
-		} 
-		
-		aside a {
-			color:  #dce2ea;  /*light blue*/
-			text-decoration: none;
-		}
-		
-		aside h2 {
-		font-size: 130%;	/* 105 or 130?   */
-		color: #dce2ea;  /*light blue*/
-		padding: 2em 0 1em 0; /* top right bottom left   */
-		}
-	
-		aside h3 {
-		font-size: 120%;	/* 105 or 130?   */
-		color: #dce2ea; 
-		padding-bottom: .25em;
-		}
-		
-		aside img {
-			border: 1px solid #282828;
-			border-radius: 10px;
-			margin-bottom: 1em;
-		}
 /* contact page Style */
 	/* list on contacyt page */
 	main ul {
@@ -248,10 +169,13 @@ main {
 	padding-bottom: .35em;
 	font-size: 120%;
 	}
+	
+	main a {
+		text-decoration: none;
+		color: #800000;
+		}
 
-
-
-/* the styles for the google Form to make it responsive*/		
+/* the styles for the google Form to make it responsive Wrapper and Wrapper iframe*/		
 /* same as a youtube video, here the full width */
 /* the wrapper, how the box will suround the form*/	
 	.Wrapper {
@@ -309,82 +233,65 @@ footer {
 	margin-bottom : 5px;
 	clear: right;
 }
-
+/*********************************************************************************************/
 /* Media Query for tablet view**********RESPONSIVE**********************************/
-
+/* no Mobile menu, desktop view, switces below*/
 .slicknav_menu {
 	display: none;
 }
 
-/* tablet portrait to standard 960 */
+/* tablet portrait to standard 960  no change here*/
 @media only screen and (max-width: 959px) {
-	section h1 { font-size: 135%; }
-	section h2, aside h2 { font-size: 120%; }
 
-
-	
+	/* Google form wrapper incraased hight to prevent double scolling of form inside page */
+	.Wrapper {
+		padding-bottom: 160%; 
+			}	
 }  
 
 
 /* mobile landscape to tablet portrait SWITCH MENU**************************************/
 @media only screen and (max-width: 769px) {
 	/* #menu is the original menu */
+	/*Turn OFF menu*/
 	.js #menu {
 		display:none;
 	}
-	
+	/*Turn ON mobile menu*/
 	.js .slicknav_menu {
 		display:block;
 	}
+	
+	/*reduce size header 300% to 250% */
+	/*stop float to center, remove top padding*/
 	header h2  {
 	font-size: 250%;
 	float: none;
 	text-align: center;
-/* 	padding: 0, auto, 0, auto; */
-}	
+	padding: 0 0 0 .4em;
+	}	
 	
-	
-
-
-	
-	/* make link blue to show on touch screen*/
-	section a {
-	color: blue;	
-	}
-	
-	section p a { 
+	/* make link email me bigger on small  touch screen  and blue to show link when using touch screen*/	
+	main p a { 
 	font-size: 150%; 
 	color: blue;
 	} 
-	/* make link email me bigger on small  touch screen  and blue to show link*/
-	
-
-	
-	/* Shrink images on small screen*/
-
-	article img { max-width: 50%; }
-	section img { max-width: 50%; }
-	
-
-		
-
-
-
-
+		/* Google form wrapper incraased hight to prevent double scolling of form inside page */
+	.Wrapper {
+		padding-bottom: 270%; 
+			}	
 }
-
-@media only screen and (max-width: 660px) {
-
-
-
-}
-
 
 /* mobile portrait to mobile landscape */
 @media only screen and (max-width: 410px) {
 	body { font-size: 90%; }
-	
-
-	 
+	/* Make link "email me" bigger on phone size screen to make easier to click*/
+	main  p a { 
+	font-size: 180%; 
+	} 	
+	/* Google form wrapper incraased hight to prevent double scolling of form inside page*/
+	.Wrapper {
+		padding-bottom: 325%; 
+			}	 
 } 	
 
