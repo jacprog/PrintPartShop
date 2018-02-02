@@ -47,15 +47,14 @@ html {
 
 
 /*the style for the h2 within the header*/
-	header h2 a {
+	header h2 {
 		font-size: 300%;
  		font-weight: 900;		/*to make bold */
 		font-family: Impact, "Arial Black", Verdana, Arial, Helvetica, sans-serif; 
-
 /*Arial Black font not showing on mobile, Added quotes, still not working*/ 
 		color: #400000; /*red almost black*/
 		padding: .6em 0 0 .4em;
-/* 		margin-left: 1%; */
+
 		float: left;
 
 	}
@@ -277,19 +276,24 @@ footer {
 	font-size: 150%; 
 	color: blue;
 	} 
-		/* Google form wrapper incraased hight to prevent double scolling of form inside page */
+	
+	/* Google form wrapper incraased hight to prevent double scolling of form inside page */
 	.Wrapper {
 		padding-bottom: 270%; 
 			}	
 }
 
 /* mobile portrait to mobile landscape */
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 415px) {
 	body { font-size: 90%; }
 	/* Make link "email me" bigger on phone size screen to make easier to click*/
 	main  p a { 
 	font-size: 160%; 
 	} 	
+/* 	adjust title to fit in one line */
+		main h1{
+		font-size: 160%;
+	}
 	/* Google form wrapper incraased hight to prevent double scolling of form inside page*/
 	.Wrapper {
 		padding-bottom: 325%; 
