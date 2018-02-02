@@ -47,7 +47,7 @@ html {
 
 
 /*the style for the h2 within the header*/
-	header h2 {
+	header h2 a {
 		font-size: 300%;
  		font-weight: 900;		/*to make bold */
 		font-family: Impact, "Arial Black", Verdana, Arial, Helvetica, sans-serif; 
