@@ -50,7 +50,8 @@ html {
 	header h2 {
 		font-size: 300%;
  		font-weight: 900;		/*to make bold */
-		font-family: Impact, "Arial Black"; 
+		font-family: Impact, "Arial Black", Verdana, Arial, Helvetica, sans-serif; 
+
 /*Arial Black font not showing on mobile, Added quotes, still not working*/ 
 		color: #400000; /*red almost black*/
 		padding: .6em 0 0 .4em;
