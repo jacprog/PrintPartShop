@@ -288,7 +288,7 @@ footer {
 	body { font-size: 90%; }
 	/* Make link "email me" bigger on phone size screen to make easier to click*/
 	main  p a { 
-	font-size: 180%; 
+	font-size: 160%; 
 	} 	
 	/* Google form wrapper incraased hight to prevent double scolling of form inside page*/
 	.Wrapper {
