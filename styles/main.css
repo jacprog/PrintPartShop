@@ -238,7 +238,26 @@ main {
 		height: 100%;
 	}
 	
-
+	/* the styles for the YouTube Video  to make it responsive Wrapper and Wrapper iframe*/		
+/* same as a youtube video, here the full width */
+/* the wrapper, how the box will suround the form*/	
+	.Wrapperyt2 {
+		position: relative;
+		padding-bottom: 56%; 
+		padding-top: 25px;
+		margin-bottom: 1%;
+		height: 0;
+	}
+	
+/* the styles for the iframe, position and size of form*/	
+	
+	.Wrapperyt2 iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+ 		width: 100%;     /*Video 100% of main who is 90% of page */
+		height: 100%;
+	}
 	
 	/* 	style for term and privacy page ol li ol*******************************************/
 	main ol {
