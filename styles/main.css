@@ -175,7 +175,7 @@ main {
 		color: #800000;
 		}
 
-/* the styles for the google Form to make it responsive Wrapper and Wrapper iframe*/		
+/* the styles for the Googlr form to make it responsive Wrapper and Wrapper iframe*/		
 /* same as a youtube video, here the full width */
 /* the wrapper, how the box will suround the form*/	
 	.Wrapper {
@@ -196,7 +196,26 @@ main {
 		height: 100%;
 	}
 	
-
+/* the styles for the bearing presentatio  to make it responsive Wrapper and Wrapper iframe*/		
+/* same as a youtube video, here the full width */
+/* the wrapper, how the box will suround the form*/	
+	.Wrapperpp {
+		position: relative;
+		padding-bottom: 56%; 
+		padding-top: 25px;
+		margin-bottom: 1%;
+		height: 0;
+	}
+	
+/* the styles for the iframe, position and size of form*/	
+	
+	.Wrapperpp iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+ 		width: 100%;     /*Video 100% of main who is 90% of page */
+		height: 100%;
+	}
 	
 	/* 	style for term and privacy page ol li ol*******************************************/
 	main ol {
@@ -256,11 +275,16 @@ footer {
 	/*Turn OFF menu*/
 	.js #menu {
 		display:none;
+
+		
 	}
 	/*Turn ON mobile menu*/
 	.js .slicknav_menu {
 		display:block;
-	}
+/* 		mobile menu icon float to right of header, works here */
+/* 				float: left;	 */
+				
+				}
 	
 	/*reduce size header 300% to 250% */
 	/*stop float to center, remove top padding*/
